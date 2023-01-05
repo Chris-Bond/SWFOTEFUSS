@@ -17,7 +17,6 @@
       <Configuration>Release</Configuration>
       <Platform>x64</Platform>
     </ProjectConfiguration>
-
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
@@ -53,27 +52,24 @@
     <WholeProgramOptimization>true</WholeProgramOptimization>
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
-
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
   <ImportGroup Label="ExtensionSettings">
   </ImportGroup>
-  <ImportGroup Label="Shared" >
+  <ImportGroup Label="Shared">
   </ImportGroup>
-    <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
-      <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
-    </ImportGroup>
-    <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
-      <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
-    </ImportGroup>
-    <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
-      <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
-    </ImportGroup>
-    <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
-      <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
-    </ImportGroup>
-
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
   <PropertyGroup Label="UserMacros" />
-
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
@@ -130,8 +126,76 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
   </ItemDefinitionGroup>
-
-  <ItemGroup></ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="11.cpp" />
+    <ClCompile Include="act_comm.cpp" />
+    <ClCompile Include="act_info.cpp" />
+    <ClCompile Include="act_move.cpp" />
+    <ClCompile Include="act_obj.cpp" />
+    <ClCompile Include="act_wiz.cpp" />
+    <ClCompile Include="boards.cpp" />
+    <ClCompile Include="bounty.cpp" />
+    <ClCompile Include="build.cpp" />
+    <ClCompile Include="clans.cpp" />
+    <ClCompile Include="color.cpp" />
+    <ClCompile Include="comm.cpp" />
+    <ClCompile Include="comments.cpp" />
+    <ClCompile Include="const.cpp" />
+    <ClCompile Include="db.cpp" />
+    <ClCompile Include="dns.cpp" />
+    <ClCompile Include="editor.cpp" />
+    <ClCompile Include="fight.cpp" />
+    <ClCompile Include="finfo.cpp" />
+    <ClCompile Include="force.cpp" />
+    <ClCompile Include="fskills.cpp" />
+    <ClCompile Include="functions.cpp" />
+    <ClCompile Include="handler.cpp" />
+    <ClCompile Include="hashstr.cpp" />
+    <ClCompile Include="hotboot.cpp" />
+    <ClCompile Include="hunter.cpp" />
+    <ClCompile Include="imc.cpp" />
+    <ClCompile Include="interp.cpp" />
+    <ClCompile Include="magic.cpp" />
+    <ClCompile Include="makeobjs.cpp" />
+    <ClCompile Include="marriage.cpp" />
+    <ClCompile Include="mccp.cpp" />
+    <ClCompile Include="misc.cpp" />
+    <ClCompile Include="mssp.cpp" />
+    <ClCompile Include="mud_comm.cpp" />
+    <ClCompile Include="mud_prog.cpp" />
+    <ClCompile Include="newarena.cpp" />
+    <ClCompile Include="pfiles.cpp" />
+    <ClCompile Include="planets.cpp" />
+    <ClCompile Include="player.cpp" />
+    <ClCompile Include="reset.cpp" />
+    <ClCompile Include="resolver.cpp" />
+    <ClCompile Include="save.cpp" />
+    <ClCompile Include="sha256.cpp" />
+    <ClCompile Include="ships.cpp" />
+    <ClCompile Include="shops.cpp" />
+    <ClCompile Include="skills.cpp" />
+    <ClCompile Include="slicers.cpp" />
+    <ClCompile Include="space.cpp" />
+    <ClCompile Include="special.cpp" />
+    <ClCompile Include="swskills.cpp" />
+    <ClCompile Include="tables.cpp" />
+    <ClCompile Include="tech.cpp" />
+    <ClCompile Include="track.cpp" />
+    <ClCompile Include="update.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="bet.h" />
+    <ClInclude Include="color.h" />
+    <ClInclude Include="dns.h" />
+    <ClInclude Include="hotboot.h" />
+    <ClInclude Include="imc.h" />
+    <ClInclude Include="imccfg.h" />
+    <ClInclude Include="mccp.h" />
+    <ClInclude Include="mssp.h" />
+    <ClInclude Include="mud.h" />
+    <ClInclude Include="pfiles.h" />
+    <ClInclude Include="sha256.h" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
